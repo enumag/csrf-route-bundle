@@ -3,7 +3,7 @@
 namespace Genedys\CsrfRouteBundle\Routing\Loader;
 
 use Genedys\CsrfRouteBundle\Routing\TokenProviderInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Routing\AnnotatedRouteControllerLoader;
+use Symfony\Bundle\FrameworkBundle\Routing\AnnotatedRouteControllerLoader;
 use Symfony\Component\Routing\Route;
 
 /**
