@@ -1,4 +1,9 @@
-**2017-xx-xx: (3.0.0)**
+**2019-xx-xx: (4.0.0)**
+- Raised version constraints to Symfony >= 4.4 and PHP >= 7.1.
+- Fixed deprecations in sensio/framework-extra-bundle.
+- Fixed deprecations in symfony/config.
+
+**2017-11-30: (3.0.0)**
 - Simplified .gitignore.
 - Raised version constraints to Symfony >= 3.3 and PHP >= 5.5.9.
 - Removed legacy code for compatibility with Symfony < 2.4.
