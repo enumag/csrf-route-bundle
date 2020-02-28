@@ -24,7 +24,7 @@ class CsrfTokenExtension extends \Twig_Extension
      */
     public function __construct(CsrfRouterInterface $csrfRouter, TokenHandlerInterface $tokenHandler)
     {
-        $this->csrfRouter       = $csrfRouter;
+        $this->csrfRouter   = $csrfRouter;
         $this->tokenHandler = $tokenHandler;
     }
 
