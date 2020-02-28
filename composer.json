@@ -1,5 +1,5 @@
 {
-    "name": "genedys/csrf-route-bundle",
+    "name": "enumag/csrf-route-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle which provides a simple way to add CSRF tokens to routes",
     "keywords": ["route", "csrf", "security"],
