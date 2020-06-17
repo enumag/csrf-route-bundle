@@ -5,8 +5,10 @@ namespace Genedys\CsrfRouteBundle\Twig\Extension;
 use Genedys\CsrfRouteBundle\Handler\TokenHandlerInterface;
 use Genedys\CsrfRouteBundle\Routing\CsrfRouterInterface;
 use Genedys\CsrfRouteBundle\Routing\Router\CsrfRouter;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class CsrfTokenExtension extends \Twig_Extension
+class CsrfTokenExtension extends AbstractExtension
 {
     /**
      * @var CsrfRouter
@@ -34,7 +36,7 @@ class CsrfTokenExtension extends \Twig_Extension
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('csrf_token', [$this, 'getToken']),
+            new TwigFilter('csrf_token', [$this, 'getToken']),
         ];
     }
 
