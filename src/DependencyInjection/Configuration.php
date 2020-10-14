@@ -25,7 +25,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('token_provider_class')->defaultValue('Genedys\\CsrfRouteBundle\\Routing\\TokenProvider\\TokenProvider')->end()
                 ->scalarNode('token_provider_base_class')->defaultValue('Genedys\\CsrfRouteBundle\\Routing\\TokenProvider\\AbstractTokenProvider')->end()
                 ->scalarNode('token_provider_dumper_class')->defaultValue('Genedys\\CsrfRouteBundle\\Routing\\TokenProvider\\Dumper\\TokenProviderDumper')->end()
-                ->scalarNode('token_provider_cache_class')->defaultValue('%router.cache_class_prefix%CsrfTokenProvider')->end()
+                ->scalarNode('token_provider_cache_class')->defaultValue('%kernel.container_class%CsrfTokenProvider')->end()
             ->end()
         ;
 
