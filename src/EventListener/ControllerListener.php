@@ -6,7 +6,7 @@ use Genedys\CsrfRouteBundle\Handler\TokenHandlerInterface;
 use Genedys\CsrfRouteBundle\Routing\CsrfRouterInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
+use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -48,9 +48,9 @@ class ControllerListener implements EventSubscriberInterface
     }
 
     /**
-     * @param FilterControllerEvent $event
+     * @param ControllerEvent $event
      */
-    public function onKernelController(FilterControllerEvent $event)
+    public function onKernelController(ControllerEvent $event)
     {
         $request = $event->getRequest();
 
